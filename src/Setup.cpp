@@ -27,14 +27,14 @@ void ShapeApp::setupUI() {
 
 	gui.addFPSCounter();
 
-	gui.addButton("update_frame", ui_update_frame);
-	gui.addToggle("update_continuous", ui_update_continuous);
+//	gui.addButton("update_frame", ui_update_frame);
+//	gui.addToggle("update_continuous", ui_update_continuous);
 	gui.addSlider("image_scale", ui_image_scale, 0.2, 1.0);
-	gui.addToggle("mesh", ui_show_mesh);
-	gui.addSlider("pixels_step", ui_pixels_step, 1, 10);
-	gui.addToggle("surface_preview", ui_show_surface_preview);
-	gui.addToggle("measured_image", ui_show_measured_image);
-	gui.addToggle("estimated_image", ui_show_estimated_image);
+//	gui.addToggle("mesh", ui_show_mesh);
+//	gui.addSlider("pixels_step", ui_pixels_step, 1, 10);
+//	gui.addToggle("surface_preview", ui_show_surface_preview);
+//	gui.addToggle("measured_image", ui_show_measured_image);
+//	gui.addToggle("estimated_image", ui_show_estimated_image);
 	gui.addToggle("depth", ui_show_depth);
 
 	gui.addTitle("voxels");
@@ -47,12 +47,12 @@ void ShapeApp::setupUI() {
 	gui.addSlider("march_step", ui_march_step, 0.0005, 0.1);
 	gui.addSlider("iterations_n", ui_march_iterations_n, 10, 1000);
 
-	gui.addTitle("ICP");
-	gui.addButton("save_snapshot", ui_save_snapshot);
-	gui.addSlider("icp_iterations", ui_icp_iterations, 0, 10);
-	gui.addSlider("normals_threshold", ui_normals_threshold, 0.0f, 2 * M_PI);
-	gui.addSlider("distanse_threshold", ui_distanse_threshold, 0.0f, 0.5f);
-	gui.addToggle("draw", ui_icp_gpu_draw);
+//	gui.addTitle("ICP");
+//	gui.addButton("save_snapshot", ui_save_snapshot);
+//	gui.addSlider("icp_iterations", ui_icp_iterations, 0, 10);
+//	gui.addSlider("normals_threshold", ui_normals_threshold, 0.0f, 2 * M_PI);
+//	gui.addSlider("distanse_threshold", ui_distanse_threshold, 0.0f, 0.5f);
+//	gui.addToggle("draw", ui_icp_gpu_draw);
 
 	gui.loadFromXML();
     gui.setAlignRight(false);
