@@ -156,14 +156,6 @@ void ShapeApp::updateVoxelsTest(VoxelVolume *voxels) {
 
 void ShapeApp::draw() {
 
-	// shape update
-//=============================================================================
-//	static ofNode t_inc;
-	static ofMatrix4x4 t_estimate;
-//	static ofMatrix4x4 t_estimate_inv;
-//	ofMatrix4x4 t;
-//	ofMatrix4x4 it;
-
 	updateVoxelsGame(&voxels);
 	updateVoxels();
 
@@ -174,7 +166,6 @@ void ShapeApp::draw() {
 	}
 
 	if (ui_reset_voxel_weights) {
-
 		ui_reset_voxel_weights = false;
 		resetVoxels();
 		updateVoxelsTest(&voxels);
